@@ -26,7 +26,7 @@ const FormTextBox = ({ label, onChange, textID }) => (
     <>
         <label 
             className="font-bold inline-block mt-4" 
-            aria-label="message" 
+            aria-label="required" 
             htmlFor={label}
         >
             {label}
