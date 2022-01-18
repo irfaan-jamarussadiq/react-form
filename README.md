@@ -1,4 +1,6 @@
 # react-form
+See project in action at: https://simplereactform-ij.netlify.app/
+
 This project uses ReactJS and Tailwind CSS to implement and design a contact form. \
 The input fields are validated and stored in local storage when submitted.
 
