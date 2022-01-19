@@ -36,6 +36,7 @@ const App = () => {
                         label="Email"
                         id="email"
                         value={user.email} 
+                        required={true}
                         onChange={handleInputChange} 
                     />
 
@@ -49,7 +50,8 @@ const App = () => {
                     <FormInput 
                         label="Subject"  
                         id="subject"              
-                        value={user.subject} 
+                        value={user.subject}
+                        required={true} 
                         onChange={handleInputChange} 
                     />
                     
