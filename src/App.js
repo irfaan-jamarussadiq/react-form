@@ -34,25 +34,29 @@ const App = () => {
                 <Form onSubmit={handleSubmit}>
                     <FormInput 
                         label="Email"
+                        id="email"
                         value={user.email} 
                         onChange={handleInputChange} 
                     />
 
                     <FormInput 
-                        label="Phone Number"                  
+                        label="Phone Number"        
+                        id="phone"          
                         value={user.phone} 
                         onChange={handleInputChange} 
                     />
 
                     <FormInput 
-                        label="Subject"                
+                        label="Subject"  
+                        id="subject"              
                         value={user.subject} 
                         onChange={handleInputChange} 
                     />
                     
                     <FormTextArea 
                         label="Message" 
-                        id={user.message} 
+                        id="message"
+                        value={user.message} 
                         onChange={handleInputChange} 
                     />
                 </Form>  

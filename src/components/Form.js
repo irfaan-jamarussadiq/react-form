@@ -9,6 +9,7 @@ function FormInput({ type='text', label, id, required=false, value, onChange }) 
                 id={id} 
                 type={type} 
                 required={required}
+                name={id}
                 value={value} 
                 onChange={onChange}                
             />
@@ -16,7 +17,7 @@ function FormInput({ type='text', label, id, required=false, value, onChange }) 
     )
 }
 
-function FormTextArea({ label, id, onChange }) {
+function FormTextArea({ label, id, value, onChange }) {
     return (
         <>
             <label 
@@ -32,14 +33,14 @@ function FormTextArea({ label, id, onChange }) {
                 id={id} 
                 wrap="hard" 
                 onChange={onChange} 
-                value={id}
+                value={value}
                 placeholder="Enter your message here ..." 
             />
         </>
     )
 }
 
-const Form = ({children, handleSubmit}) => {
+const Form = ({ children, handleSubmit }) => {
     return (
         <form className="mt-4" onSubmit={handleSubmit}>
             { children }
